@@ -614,13 +614,14 @@ img{max-width: 100%}
           transform: translateY(-50%);
 }
 .single-gallery:hover img {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    -webkit-transform: scale(1);
+            transform: scale(1);
 }
 .single-gallery img {
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
 }
+.single-gallery h2{/* position: absolute; */z-index: 99;color: #fff;bottom: 0;background: #6bc513;width: 100%;font-size: 20px;padding: 12px;}
 .owl_pagination.owl-theme .owl-controls .owl-page span,.home-slider-list.owl-carousel .owl-controls .owl-page span {
   background: rgba(92, 197, 57, 0.6) none repeat scroll 0 0;
   height: 14px;
@@ -3605,88 +3606,49 @@ a.button.btn-gray:hover,a.button.btn-border:hover{color:#6bc513}
 /*--Form--*/
 
 .float-forms-buttons {	position: fixed; top: 25%; z-index: 999; width: 364px;	border-right: #1b2936;	margin-top: -78px;	transition: all 1s;	right: -319px}
-
 .float-forms-buttons .forms-cont, .float-forms-buttons a {	width: 100%;	clear: both;	position: relative;	-moz-transition: all 1s;	overflow: hidden}
-
 .float-forms-buttons .forms-cont {	height: 0;	background: rgba(34,50,64,.95);	transition: all 1s;	padding: 0 30px;	display: -ms-flexbox;	display: flex;	-ms-flex-direction: column;	flex-direction: column;	-ms-flex-pack: center;	justify-content: center}
-
 .float-forms-buttons a {	display: block;	background: #25333f; font-size: 15px; text-transform: uppercase; height: 45px; line-height: 45px; float: right; left: 0; transition: all 1s}
-
 /* .float-forms-buttons a:nth-of-type(2) {		animation-duration: 1s;	animation-name: pulse;	animation-iteration-count: Infinite;	animation-timing-function: ease-out;	animation-delay: .5s} */
 .float-forms-buttons a.ff-whatapp {	display: none;}
 .float-forms-buttons a .ff-icon {	display: inline-block;	width: 45px;	height: 45px;	float: left;	margin-right: 10px}
-
 .float-forms-buttons a.ff-req-quote i {	background: url(images/ff-subscribe.png) top #6bc513}
-
 .float-forms-buttons a.ff-call{margin: 5px 0;}
-
 .float-forms-buttons a.ff-call i {	background: url(images/ff-req-quote.png) top #6bc513}
-
 .forms-cont a.ff-close {top:0; position: absolute;	display: block;	color: #fff}
-
 .forms-cont a.ff-close i {	background: url(images/del-ico.png) center no-repeat}
-
 .float-forms-buttons a:hover {	left: -170px;	color: #fff}
-
 .float-forms-buttons.show {	top: 15%;	bottom: 0;	height: 100%;	margin: 0;	max-width: 100vw;	right: 0}
-
 .float-forms-buttons.show a { width: 100%}
-
 .float-forms-buttons.show a:hover {	left: 0}
-
 .float-forms-buttons.show a:nth-of-type(2) { animation-name: none}
-
 .float-forms-buttons.show a.active+.forms-cont {height: calc(65vh - 0px)}
-
 .float-forms-buttons.show+.float-forms-buttons-closest { position: fixed; width: calc(100vw - 369px); height: 100vh; z-index: 2; top: 0; left: 0; background: rgba(0,0,0,.01)}
 .float-forms-buttons.show p{border: 0; background: none;}
 .forms-cont p{color: #ccd9e4;    line-height: 1.7; font-size: 12px;    font-weight: 300;}
-
 .float-forms-buttons .mobi-ff-cop {	display: none}
-
 .float-forms-buttons .soc-ff-btns {	width: 170px;	margin: 0 auto;	display: -ms-flexbox;	display: flex;	-ms-flex-pack: justify;	justify-content: space-between}
-
 .float-forms-buttons .soc-ff-btns a {display: inline-block;	width: auto;	height: auto!important;	float: none;	border: none;	font-size: 17px!important;	color: #fff}
-
 .float-forms-buttons .float-forms-footer {	display: none;	position: absolute;	bottom: 0;	width: 100%;	background: rgba(34,50,64,.95)}
-
 @keyframes pulse {from, to {transform:scale3d(1, 1, 1)}50% {transform:scale3d(1.05, 1.05, 1.05)}}
-
 .float-forms-buttons .button.animate {animation-name: pulse;	animation-timing-function: ease}
-
 .float-forms-buttons .input-field, .float-forms-buttons textarea {    margin-bottom: 5px;	display: block;	width: 100%;	padding: 7px 10px;	background: #1f2e3b!important;	border: 1px solid #2a3f50;	border-radius: 4px;	color: #fff}
-
 .float-forms-buttons .select, .float-forms-buttons .select-wrapper input[type=text] {	display: none}
-
 .float-forms-buttons .input-field:focus, .float-forms-buttons textarea:focus {	background: 0 0}
-
 .float-forms-buttons .input-field.success, .float-forms-buttons textarea.success {	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #1D9E6F}
-
 .float-forms-buttons .input-field.warn, .float-forms-buttons textarea.warn {	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #CA6B22}
-
 .float-forms-buttons .input-field.error, .float-forms-buttons textarea.error {	border-color: rgba(124,43,76,.75);	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #7c2b4c}
-
 .float-forms-buttons .input-field.captcha-field, .float-forms-buttons textarea.captcha-field {	max-width: 140px}
-
 .float-forms-buttons textarea {	min-height: 77px;	max-width: 100%; font: 300 15px; outline: 0; resize: none}
-
 .float-forms-buttons .button-frm {	padding: 9px 50px;	border: 1px solid #6bc513;	border-radius: 25px;	background: 0 0;	text-transform: uppercase;	text-align: center;	color: #8493a8;	transition-duration: .4s;	cursor: pointer}
-
 .float-forms-buttons .button-frm:hover { background: #6bc513; border-color: #6bc513; color: #fff}
-
 .float-forms-buttons ::-webkit-input-placeholder {	color: #ccc; }
-
 .float-forms-buttons ::-moz-placeholder{ color: #ccc;}
-
 .float-forms-buttons :-ms-input-placeholder { color: #ccc;}
-
 .float-forms-buttons :-moz-placeholder {color: #ccc;}
-
 /* added by Bhakti starts */
 /* added by Bhakti ends */
-
 @media screen and (min-height: 768px) {
-
 	.float-forms-buttons.show a.active+.forms-cont {height: calc(75vh - 0px)}
 	.float-forms-buttons a .whatapp {	display:inline-block;}
 	}
