@@ -1,4 +1,4 @@
-var cacheName = 'spicefitnessV1';
+var cacheName = 'spicefitnessV2';
 
 var filesToCache = [
     './',
@@ -26,6 +26,10 @@ var filesToCache = [
 	'./images/logo/logo2.png',
 	'./images/about/1.jpg',
 	'./images/gallery/1a.jpg',
+	'./images/gallery/2a.jpg',
+	'./images/gallery/3a.jpg',
+	'./images/gallery/4a.jpg',
+	'./images/gallery/5a.jpg',
 	'./images/blog/1.jpg',
 	'./images/blog/2.jpg',
 	'./images/feature/1.png',
